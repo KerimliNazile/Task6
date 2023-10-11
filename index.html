@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. 1den 100e qeder ededler icerisinde 5e ve 3e bolunenlerin toplamin tapan algoritm
+        let toplam = 0;
+        for (let i = 1; i < 100; i++) {
+            if (i % 15 === 0)
+                toplam += i;
+        }
+        console.log("1 den 100 e qeder ededler icinde 3 e ve 5 e bolunen ededlerin toplami " + toplam + " eder");
+
+        // 4.Gelen aylara gore hansi fesil oldugunu bildiren algoritm.
+
+        let month = prompt("enter the month")
+        switch (month) {
+            case "December":
+            case "January":
+            case "February":
+                console.log("Winter month");
+                break;
+            case "March":
+            case "April":
+            case "May":
+                console.log("Spring month");
+                break;
+            case "June":
+            case "July":
+            case "August":
+                console.log("Summer month");
+                break;
+            case "September":
+            case "October":
+            case "November":
+                console.log("Autumn month");
+                break;
+
+            default:
+                break;
+        }
+
+
+
+        //    3.Verilen ededin sade ve murekkeb oldugunu bildiren algoritm
+
+        let notMatch = false;
+        if (num <= 1)
+
+
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    notMatch = true;
+                    break;
+                }
+            }
+
+        if (notMatch) {
+            alert("Sade ededdir");
+        } else {
+            alert("Murekkeb ededdir");
+
+        }//   ( Tam bitire bilmedim.Sehvimi tapa bilmedim)
+
+
+
+        // 2.Verilen ededin 2nin quvveti olub olmadigini bildiren algoritm
+
+        let num = parseFloat(prompt("Say: "));
+        while (num > 1) {
+            if (num%2!== 0) {
+                alert("2 nin quvveti deyil");
+                break;
+            } else {
+                num/= 2;
+            }
+            if (num===1) {
+                alert("2 nin quvvetidir");
+            }
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
